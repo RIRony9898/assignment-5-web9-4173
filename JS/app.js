@@ -70,6 +70,7 @@ document.getElementById('apply-button').addEventListener('click', function () {
     }
     document.getElementById('btn-hide').classList.add('hidden')
 })
+// alert box
 const alertBox = (select) => {
     const number = document.getElementById('mobile-number')
     if (number.value.length > 10) {
