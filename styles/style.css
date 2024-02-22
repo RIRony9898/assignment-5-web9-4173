@@ -1,0 +1,4 @@
+#listOfTicket ul{
+    display:flex;
+    gap: 140px;
+}

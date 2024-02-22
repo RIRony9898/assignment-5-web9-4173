@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bus Ticket Buying Site</title>
+    <title>E-Travels Bus Ticket Buying Site</title>
 
     <!-- daisyUI and tailwind css -->
     <link
@@ -19,43 +19,447 @@
   <body>
     <!-- Header  Section Start -->
     <header>
-        <!-- NavBar section start -->
-        <div class="navbar bg-base-100 px-52">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                ></ul>
-              </div>
-              <a class="btn btn-ghost text-2xl">E-Ticket</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn">Bus<img src="images/bus-icon.png" alt="" /> </a>
-            </div>
+      <!-- NavBar section start -->
+      <div class="navbar bg-base-100 px-52">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            ></ul>
           </div>
-        <!-- NavBar section end -->
+          <a class="btn btn-ghost text-2xl">E-Travels</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Bus<img src="images/bus-icon.png" alt="" /> </a>
+        </div>
+      </div>
+      <!-- NavBar section end -->
     </header>
     <!-- Header  Section End -->
 
     <!--  Main Content Section Start -->
-    <main>
-        
+    <main class="w-11/12 m-auto">
+      <!-- banner section start -->
+      <section class="w-full relative">
+        <div
+          class="hero min-h-screen w-full rounded-2xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-4xl font-bold">
+                End-To-End Travel with
+                <br />
+                <span class="text-green-500">E Travels</span>
+              </h1>
+              <p class="mb-5">
+                Discover new places with E-Travels Online bus ticket booking at
+                your fingertips Compare prices, ratings and amenities Get
+                instant confirmation and support redBus - the ultimate bus
+                platform
+              </p>
+              <button class="btn btn-primary">
+                <a href="#selectYourSeats">Buy Ticket</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute flex flex-row justify-between items-center w-11/12 left-1/2 -translate-x-1/2 -bottom-16"
+        >
+          <div class="w-[300px] h-[138px] bg-slate-300 flex rounded-3xl">
+            <img
+              class="h-24 w-24 mt-4 ml-4"
+              src="images/people.png"
+              alt=""
+              srcset=""
+            />
+            <!-- Register user -->
+            <div>
+              <h2 class="text-2xl font-bold mb-2 pt-8">500K+</h2>
+              <p>Registered User</p>
+            </div>
+          </div>
+
+          <!-- Ticket sold -->
+          <div class="flex bg-slate-300 w-[300px] h-[138px] rounded-3xl">
+            <img
+              class="h-28 w-28 mt-4 ml-4"
+              src="images/ticket-cupon.png"
+              alt=""
+              srcset=""
+            />
+            <div class="mt-10">
+              <h2 class="text-2xl font-bold">1.7 lacks</h2>
+              <p>Ticket sold</p>
+            </div>
+          </div>
+
+          <!-- Rental Partner -->
+          <div
+            class="flex bg-slate-300 w-[300px] h-[138px] rounded-3xl space-x-2"
+          >
+            <img
+              class="h-28 w-28 mt-4 ml-4"
+              src="images/stoppage.png"
+              alt=""
+              srcset=""
+            />
+            <div class="mt-10">
+              <h2 class="text-2xl font-bold">80k</h2>
+              <p>Rental Partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+
+      <!-- offer section start -->
+      <section class="mt-28">
+        <h1 class="text-3xl font-bold text-center my-10">
+          Best offers for you
+        </h1>
+        <div class="flex space-x-6 mt-4">
+          <div class="bg-yellow-400 flex w-[550px] h-48 rounded-2xl">
+            <div class="mt-10 ml-8">
+              <h1 class="text-3xl font-bold">15% OFF</h1>
+              <p>on your next purchase</p>
+              <p>use by march 2024</p>
+            </div>
+            <div>
+              <img class="ml-24 h-48" src="images/cupon-devider.png" alt="" />
+            </div>
+            <div class="mt-10">
+              <h1 class="text-4xl font-bold">
+                <span id="coupon-one">NEW15</span>
+              </h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-[#F78C9C] flex w-[550px] h-48 rounded-2xl">
+              <div class="mt-10 ml-8">
+                <h1 class="text-3xl font-bold">20% OFF</h1>
+                <p>on your next purchase</p>
+                <p>use by march 2024</p>
+              </div>
+              <div>
+                <img class="ml-24 h-48" src="images/cupon-devider.png" alt="" />
+              </div>
+              <div class="mt-10">
+                <h1 class="text-4xl font-bold">
+                  <span id="coupon-one">Couple 20</span>
+                </h1>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14">
+          <img class="mx-auto" src="images/Frame 4.svg" alt="" srcset="" />
+        </div>
+
+        <div class="flex justify-center items-center mb-6">
+          <button class="btn btn-outline btn-success">See All Offers</button>
+        </div>
+      </section>
+      <!-- offer section end -->
+
+      <!-- Buy ticket section start -->
+      <section
+        class="mt-4 p-8 border-solid border-2 border-green-500 rounded-2xl"
+      >
+        <h1 class="text-center text-2xl font-semibold">E-Travels</h1>
+        <p class="text-center p-4">
+          Plan your next trip with E-Travels, the ultimate online destination
+          for bus tickets, routes, and schedules in Bangladesh. Explore
+          Bangladesh by bus with us, we ensure the most reliable and affordable
+          online booking service for bus travelers.
+        </p>
+        <div class="bg-gray-50 flex">
+          <div class="bg-[#FFFFFF] w-[1100px] h-[400px] rounded-2xl">
+            <div class="grid grid-cols-2 space-x-16">
+              <div class="mt-10 flex space-x-2">
+                <img src="images/bus-logo.png" alt="" />
+                <div>
+                  <h1 class="text-3xl font-bold">E-Travels</h1>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div
+                class="flex border-solid border-2 border-green-500 rounded-2xl w-36 h-14 mt-9 items-center bg-green-300"
+              >
+                <img class="" src="images/seat-green-filled.png" alt="" />
+                <button class="btn btn-ghost">
+                  <span id="seat-left">40</span> Sets Left
+                </button>
+              </div>
+            </div>
+            <div
+              class="w-[780px] h-[200px] bg-gray-200 pt-10 rounded-xl pl-2 mt-4"
+            >
+              <div
+                class="flex pl-4 space-x-96 bg-gray-100 rounded-xl space-y-4 items-center w-[700px]"
+              >
+                <h1>Route</h1>
+                <h1>Dhaka-Sylhet</h1>
+              </div>
+              <hr class="w-[700px]" />
+              <div
+                class="flex pl-4 space-x-80 bg-gray-100 rounded-2xl space-y-4 mt-2 items-center w-[700px]"
+              >
+                <h1>Departure Time</h1>
+                <h1>9:00Pm</h1>
+              </div>
+              <div class="flex mt-4 space-x-14 pl-2">
+                <h1 class="bg-gray-300 w-48 h-9 rounded-xl text-center">
+                  Border Point-Laxmipur
+                </h1>
+                <h1 class="bg-gray-300 w-48 h-9 rounded-xl text-center">
+                  Dropping Point - Bogura
+                </h1>
+                <h1 class="bg-gray-300 w-48 h-9 rounded-xl text-center">
+                  Est. Time - 11 Hour
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <img class="h-[410px]" src="images/info-devider.png" alt="" />
+          <div>
+            <div class="mt-28">
+              <img src="images/fare.png" alt="" />
+              <h1 class="text-xl font-bold">
+                <span id="Price">550</span> Taka
+              </h1>
+              <p>Per Sets</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="selectYourSeats"
+          class="bg-[#FFFFFF] w-[1100px] h-[400px] flex rounded-2xl"
+        >
+          <div class="ml-4 mt-4">
+            <div>
+              <h1 class="text-2xl font-semibold">Select Your Sets</h1>
+              <hr />
+            </div>
+            <div class="flex space-x-[350px]">
+              <div class="flex">
+                <img src="images/seat-gray.png" alt="" />
+                <h1>Available</h1>
+              </div>
+              <div class="flex">
+                <img src="images/seat-green-filled.png" alt="" />
+                <h1>Selected</h1>
+              </div>
+            </div>
+            <hr class="w-1/2" />
+            <button class="ml-[420px] mt-4">
+              <img src="images/Group 56.svg" alt="" />
+            </button>
+
+            <!-- Seat button Start  -->
+            <div class="flex space-x-8">
+              <h1 class="mt-2">A</h1>
+              <button class="seats btn btn-active btn-ghost w-24">A1</button>
+              <button class="seats btn btn-active btn-ghost w-24">A2</button>
+              <button class="seats btn btn-active btn-ghost w-24">A3</button>
+              <button class="seats btn btn-active btn-ghost w-24">A4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">B</h1>
+              <button class="seats btn btn-active btn-ghost w-24">B1</button>
+              <button class="seats btn btn-active btn-ghost w-24">B2</button>
+              <button class="seats btn btn-active btn-ghost w-24">B3</button>
+              <button class="seats btn btn-active btn-ghost w-24">B4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">C</h1>
+              <button class="seats btn btn-active btn-ghost w-24">C1</button>
+              <button class="seats btn btn-active btn-ghost w-24">C2</button>
+              <button class="seats btn btn-active btn-ghost w-24">C3</button>
+              <button class="seats btn btn-active btn-ghost w-24">C4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">D</h1>
+              <button class="seats btn btn-active btn-ghost w-24">D1</button>
+              <button class="seats btn btn-active btn-ghost w-24">D2</button>
+              <button class="seats btn btn-active btn-ghost w-24">D3</button>
+              <button class="seats btn btn-active btn-ghost w-24">D4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">E</h1>
+              <button class="seats btn btn-active btn-ghost w-24">E1</button>
+              <button class="seats btn btn-active btn-ghost w-24">E2</button>
+              <button class="seats btn btn-active btn-ghost w-24">E3</button>
+              <button class="seats btn btn-active btn-ghost w-24">E4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">F</h1>
+              <button class="seats btn btn-active btn-ghost w-24">F1</button>
+              <button class="seats btn btn-active btn-ghost w-24">F2</button>
+              <button class="seats btn btn-active btn-ghost w-24">F3</button>
+              <button class="seats btn btn-active btn-ghost w-24">F4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">G</h1>
+              <button class="seats btn btn-active btn-ghost w-24">G1</button>
+              <button class="seats btn btn-active btn-ghost w-24">G2</button>
+              <button class="seats btn btn-active btn-ghost w-24">G3</button>
+              <button class="seats btn btn-active btn-ghost w-24">G4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">H</h1>
+              <button class="seats btn btn-active btn-ghost w-24">H1</button>
+              <button class="seats btn btn-active btn-ghost w-24">H2</button>
+              <button class="seats btn btn-active btn-ghost w-24">H3</button>
+              <button class="seats btn btn-active btn-ghost w-24">H4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">I</h1>
+              <button class="seats btn btn-active btn-ghost w-24">I1</button>
+              <button class="seats btn btn-active btn-ghost w-24">I2</button>
+              <button class="seats btn btn-active btn-ghost w-24">I3</button>
+              <button class="seats btn btn-active btn-ghost w-24">I4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">J</h1>
+              <button class="seats btn btn-active btn-ghost w-24">J1</button>
+              <button class="seats btn btn-active btn-ghost w-24">J2</button>
+              <button class="seats btn btn-active btn-ghost w-24">J3</button>
+              <button class="seats btn btn-active btn-ghost w-24">J4</button>
+            </div>
+          </div>
+          <!-- Seat button end  -->
+
+          <!-- Payment section start -->
+          <div>
+            <div class="ml-8 mt-4">
+              <h1 class="text-2xl font-semibold">Select Your Sets</h1>
+              <hr />
+              <div class="bg-gray-200 p-3 rounded-xl">
+                <div class="flex space-x-28 text-xl py-5 text-center">
+                  <p>Sets <span id="selected-seat">0</span></p>
+                  <p>Class</p>
+                  <p>Price</p>
+                  <hr />
+                </div>
+                <div
+                  class="border-b border-t border-dashed border-gray-500 py-5"
+                  id="listOfTicket"
+                ></div>
+                <div class="flex justify-between items-center py-2">
+                  <h1>Total Price</h1>
+                  <h1><span id="total-price">0</span>BDT</h1>
+                </div>
+                <div class="">
+                  <div id="btn-hide" class="flex flex-row">
+                    <input
+                      id="Coupon"
+                      type="text"
+                      placeholder="Have any Coupon"
+                      class="input input-bordered input-info w-full rounded-lg rounded-r-none"
+                    />
+                    <button
+                      id="apply-button"
+                      class="btn join-item bg-green-500 text-white rounded-box border-0"
+                      disabled
+                    >
+                      Apply
+                    </button>
+                  </div>
+                  <div class="flex justify-between items-center py-2">
+                    <h1>Grant Price</h1>
+                    <h1><span id="grand-total">0</span>BDT</h1>
+                  </div>
+
+                  <form>
+                    <input
+                      class="w-full py-3 rounded-lg px-3"
+                      type="text"
+                      placeholder="Enter Your Name"
+                    />
+                    <input
+                      class="w-full py-3 rounded-lg px-3 mt-3"
+                      type=""
+                      name=""
+                      id="mobile-number"
+                      placeholder="Enter Your Number"
+                    />
+                    <input
+                      class="w-full py-3 rounded-lg px-3 mt-3"
+                      type=""
+                      name=""
+                      id=""
+                      placeholder="Enter Your Email"
+                    />
+                  </form>
+                  <!-- <button onclick="popUp()" class="btn btn-success w-full mt-3">Success</button> -->
+                  <!-- Open the modal using ID.showModal() method -->
+                  <div class="form-control mt-6">
+                    <button
+                      onclick="alertBox()"
+                      id="success-btn"
+                      class="btn bg-green-500 text-white"
+                      disabled
+                    >
+                      Success
+                    </button>
+                  </div>
+
+                  <dialog id="alertDialogue" class="modal">
+                    <div
+                      class="w-[700px] h-[350px] bg-zinc-100 ml-11 items-center text-center mt-4"
+                    >
+                      <img class="ml-72 pt-6" src="images/success.png" alt="" />
+                      <div class="mt-6 space-y-4">
+                        <h1>SUCCESS</h1>
+                        <p>
+                          Thank You For Booking Our Bus Seats. <br />We are
+                          working hard to find the best service and deals for
+                          you
+                        </p>
+                        <p>
+                          Shortly you will find a confirmation in your email
+                        </p>
+                        <button
+                          onclick="popUp()"
+                          class="btn btn-success rounded-xl"
+                        >
+                          Continue
+                        </button>
+                      </div>
+                    </div>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Payment section end -->
+        </div>
+      </section>
+      <!-- buy ticket section end -->
     </main>
     <!--  Main Content Section End -->
 
     <!-- Footer section Start -->
-    <footer></footer>
+    <footer>
+      
+    </footer>
     <!-- Footer section End -->
-
 
     <!--  JS script -->
     <script src="./JS/app.js"></script>
